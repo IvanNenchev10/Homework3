@@ -1,0 +1,33 @@
+﻿using System;
+namespace Задача2
+{
+    class Program
+    {
+        static void Main()
+        {
+            float a, b;
+            char result = ' ';
+            Console.WriteLine("Enter first number:");
+            a = float.Parse(Console.ReadLine());
+            Console.WriteLine("Enter second number:");
+            b = float.Parse(Console.ReadLine());
+            if(a>0 && b>0)
+            {
+                result = '+';
+            }
+            else if(a>0 && b<0)
+            {
+                result = '-';
+            }
+            else if(a<0 && b>0)
+            {
+                result = '-';
+            }
+            else if(a<0 && b<0)
+            {
+                result = '+';
+            }
+            Console.WriteLine("Sign of the equation is:{0}", result);
+        }
+    }
+}
